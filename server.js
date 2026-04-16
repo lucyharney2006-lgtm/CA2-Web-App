@@ -14,7 +14,17 @@ app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: false, }));
 
 
-const handlebars = create({extname: '.hbs'});
+const handlebars = create({
+    extname: '.hbs',
+    helpers:{
+        
+        highlightDifficulty: (rating) => {
+   let message = rating >= 4 ? "Experienced players only!" :  "";
+   return message;
+},
+
+    },
+});
 app.engine(".hbs", handlebars.engine);
 app.set("view engine", ".hbs");
 

@@ -25,6 +25,23 @@
           <p>Empty biome!</p>
         {{/if}}
 
+        {{#if rating}}
+    <p>
+        <span 
+            class="ui red disabled rating" 
+            data-icon="circle" 
+            data-rating="{{rating}}" 
+            data-max-rating="5">
+        </span>
+
+        <span style="color: grey; font-size: 90%; font-style: italic">
+  {{highlightDifficulty rating}}
+</span>
+
+    </p>
+{{/if}}
+
+
         <a href="/biome/{{id}}">
           <i class="hand right point outline icon"></i>
           View Biome

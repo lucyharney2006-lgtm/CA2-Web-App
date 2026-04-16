@@ -46,5 +46,40 @@
         </div> 
     </div>
    </div>   
+
+ <div class="ui sixteen wide column">
+      <div class="ui centered two statistics">
+
+        <div class="ui yellow statistic">
+          <div class="value">
+            <i class="red exclamation point icon"></i>
+          </div>
+          <div class="label">
+            Most difficult biomes: {{highest}} points
+            <table>
+              {{#each displayFav}}
+              <tr>
+                <td>{{this}}</td>
+              </tr>
+              {{/each}}
+            </table>
+          </div>
+        </div>
+
+        <div class="ui green statistic">
+          <div class="value">
+            <i class="dot circle outline icon"></i>
+          </div>
+          <div class="label">
+            Average Difficulty Rating: {{displayAvgRating}}
+          </div>
+        </div>
+		
+      </div>
+    </div>
+    
+  </div>
+
+
   {{/with}}
 </section>

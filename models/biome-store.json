@@ -4,6 +4,7 @@
       "id": "01",
       "title": "Overworld",
       "image": "flowerforest.jpg",
+      "rating": 2,
       "mobs": [
         {
           "id": "03",
@@ -41,6 +42,7 @@
       "id": "02",
       "title": "Nether",
       "image": "nether.jpg",
+      "rating": 4,
       "mobs": [
         {
           "id": "07",
@@ -68,6 +70,7 @@
       "id": "03",
       "title": "The End",
       "image": "theend.jpg",
+      "rating": 3,
       "mobs": [
         {
           "id": "10",

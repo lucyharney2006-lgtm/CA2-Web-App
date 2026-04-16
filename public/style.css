@@ -127,3 +127,7 @@ body.about-page .ui.container {
   font-family: "Press Start 2P", monospace !important;
   
 }
+
+table {
+  margin:auto
+}
