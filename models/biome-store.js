@@ -35,6 +35,17 @@ removeBiome(id) {
 },
 
 
+getUserBiomes(userid) {
+  return this.store.findBy(this.collection, (biome => biome.userid === userid));
+},
+
+searchUserBiomes(search, userid) {
+  return this.store.findBy(
+    this.collection,
+    (biome => biome.userid === userid && biome.title.toLowerCase().includes(search.toLowerCase())))
+}, 
+
+
 
 };
 

@@ -88,6 +88,19 @@
           "type": "Aggressive"
         }
       ]
+    },
+    {
+      "userid": "b8a0d426-8eaf-41c7-9d72-8f7dbf68f1a3",
+      "id": "28646b30-2211-42c3-a358-0d7bf3576f1e",
+      "title": "Desert",
+      "rating": null,
+      "mobs": [
+        {
+          "id": "6d1d3d74-0790-438f-9c7d-75c6b52ddab0",
+          "title": "Camel",
+          "type": "Passive"
+        }
+      ]
     }
   ]
 }

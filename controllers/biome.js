@@ -3,19 +3,24 @@
 import logger from '../utils/logger.js';
 import biomeStore from '../models/biome-store.js';
 import { v4 as uuidv4 } from 'uuid';
+import accounts from './accounts.js';
+
 
 const biome = {
-  createView(request, response) {
+createView(request, response) {
     const biomeId = request.params.id;
-    logger.debug(`Biome id = ${biomeId}`);
+    const loggedInUser = accounts.getCurrentUser(request);
+    logger.debug('Biome id = ' + biomeId);
     
     const viewData = {
       title: 'Biome',
-      singleBiome: biomeStore.getBiome(biomeId)
+      singleBiome: biomeStore.getBiome(biomeId),
+      fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
     };
 
-        response.render('biome', viewData);
-  },
+    response.render('playlist', viewData);
+},
+
 
 
 addMob(request, response) {

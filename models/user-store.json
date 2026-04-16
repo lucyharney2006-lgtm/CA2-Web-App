@@ -1,0 +1,25 @@
+{
+  "users": [
+    {
+      "firstName": "jake",
+      "lastName": "thedog",
+      "email": "jake@thedog.com",
+      "password": "secret",
+      "id": "3ad52697-6d98-4d80-8273-084de55a86c0"
+    },
+    {
+      "firstName": "finn",
+      "lastName": "thehuman",
+      "email": "finn@thehuman.com",
+      "password": "secret",
+      "id": "2b6f0989-7b7f-4a38-ad26-aa06b922d751"
+    },
+    {
+      "firstName": "Lucy",
+      "lastName": "Harney",
+      "email": "123@456.com",
+      "password": "password",
+      "id": "b8a0d426-8eaf-41c7-9d72-8f7dbf68f1a3"
+    }
+  ]
+}
