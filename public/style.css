@@ -1,0 +1,129 @@
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Benton Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 2em;
+display:flex;
+  background-image: linear-gradient(
+    rgba(0,0,0,0.4),
+    rgba(0,0,0,0.4)
+  ),
+  url("/cherry.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Make sure the main container inside About page doesn't push things away */
+body.about-page .ui.container {
+  margin-top: 0 !important;
+  width: 100%;
+}
+/* Center the main container */
+.ui.container {
+  margin-top: 40px !important;
+  text-align:center;
+}
+
+/* Card layout */
+.ui.cards {
+  justify-content: center;
+  gap: 25px;
+}
+
+/* Card styling */
+.ui.cards .card {
+  border-radius: 15px !important;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.35) !important;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* Hover animation */
+.ui.cards .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.5) !important;
+}
+
+/* Card images */
+.ui.cards .image img {
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Card title */
+.ui.cards .header {
+  font-size: 1.5rem !important;
+  text-align: center;
+
+}
+
+/* View biome link */
+.extra.content a {
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  color: palevioletred !important;
+  font-size: 1rem;
+}
+
+/* Map section */
+.map {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.ui-five-statistics {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  gap: 30px;
+}
+
+/* Make content push footer down */
+.content-wrap {
+  flex: 1; /* takes remaining space */
+}
+
+/* Footer styling */
+.site-footer {
+  padding: 20px;
+  background: #2d2d2d;
+  border-top: 6px solid #5a8f3d;
+  color: #e0e0e0;
+  text-align: center;
+  font-family: monospace;
+}
+.site-footer p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+ .ui.menu, a{
+  font-family: "Press Start 2P", monospace !important;
+  color:green;
+
+}
+
+.ui.menu a:hover {
+  color: palevioletred !important;  /* Hover state */
+}
+
+.ui.cards, .mc-footer, h1 {
+  font-family: "Press Start 2P", monospace !important;
+  
+}

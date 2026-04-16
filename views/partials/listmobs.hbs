@@ -1,0 +1,29 @@
+{{#if singleBiome.mobs}}
+
+  <table class="ui unstackable striped table">
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Mobs</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each singleBiome.mobs}}
+        <tr>
+          <td>
+            {{title}}
+          </td>
+          <td>
+            {{type}}
+          </td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+
+  {{else}}
+    <h3 class="ui message">
+      Empty Biome!
+    </h3>
+
+{{/if}}

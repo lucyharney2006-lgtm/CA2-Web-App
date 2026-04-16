@@ -1,0 +1,23 @@
+'use strict';
+
+import logger from '../utils/logger.js';
+import JsonStore from './json-store.js';
+
+const biomeStore = {
+
+  store: new JsonStore('./models/biome-store.json', { biomeCollection: [] }),
+  collection: 'biomeCollection',
+  array: 'mobs',
+
+  getAllBiomes() {
+    return this.store.findAll(this.collection);
+  },
+
+  getBiome(id) {
+    return this.store.findOneBy(this.collection, (biome => biome.id === id));
+},
+
+
+};
+
+export default biomeStore;
