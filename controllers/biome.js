@@ -31,5 +31,14 @@ addMob(request, response) {
 
 },
 
+deleteMob(request, response) {
+    const biomeId = request.params.id;
+    const mobId = request.params.mobid;
+    logger.debug(`Deleting Mob  $(mobId} from Biome ${biomeId}`);
+    biomeStore.removeMob(biomeId, mobId);
+    response.redirect('/biome/' + biomeId);
+},
+
+
 };
 export default biome;

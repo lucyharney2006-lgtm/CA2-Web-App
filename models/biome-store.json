@@ -28,7 +28,7 @@
         {
           "id": "bcbb9203-4fb1-4c18-a646-a19b10c016d9",
           "title": "Wolf",
-          "artist": "Passive"
+          "type": "Passive"
         },
         {
           "id": "e3b72084-98aa-4681-ae1e-2f2654ece924",
@@ -60,7 +60,7 @@
         {
           "id": "a731bfaf-8542-4674-b062-7d2b0d264cd2",
           "title": "Magma Cube",
-          "artist": "Aggressive"
+          "type": "Aggressive"
         }
       ]
     },

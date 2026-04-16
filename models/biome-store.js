@@ -21,6 +21,20 @@ addMob(id, mob) {
     this.store.addItem(this.collection, id, this.array, mob);
 },
 
+addBiome(biome) {
+    this.store.addCollection(this.collection, biome);
+},
+
+removeMob(id, mobId) {
+    this.store.removeItem(this.collection, id, this.array, mobId);
+},
+
+removeBiome(id) {
+    const biome = this.getBiome(id);
+    this.store.removeCollection(this.collection, biome);
+},
+
+
 
 };
 

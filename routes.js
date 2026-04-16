@@ -17,8 +17,14 @@ router.get('/', start.createView);
 router.get('/dashboard', dashboard.createView);//getting dashboard view
 router.get('/about', about.createView);//getting about view
 router.get('/biome/:id', biome.createView);
+router.get('/biome/:id/deletemob/:mobid', biome.deleteMob);
+router.get('/dashboard/deletebiome/:id', dashboard.deleteBiome);
+
+
 
 router.post('/biome/:id/addmob', biome.addMob);
+router.post('/dashboard/addbiome', dashboard.addBiome);
+
 
 
 
