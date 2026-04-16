@@ -11,6 +11,8 @@ import start from './controllers/start.js';
 import dashboard from './controllers/dashboard.js';//importing dashboard file
 import about from './controllers/about.js';//importing about file
 import biome from './controllers/biome.js';
+import stats from './controllers/stats.js';
+
 
 
 router.get('/', start.createView);
@@ -19,6 +21,8 @@ router.get('/about', about.createView);//getting about view
 router.get('/biome/:id', biome.createView);
 router.get('/biome/:id/deletemob/:mobid', biome.deleteMob);
 router.get('/dashboard/deletebiome/:id', dashboard.deleteBiome);
+router.get('/stats', stats.createView);
+
 
 
 
