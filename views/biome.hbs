@@ -1,11 +1,22 @@
 {{> menu}}
 
+{{#with singleBiome}}
+
 <section class="ui center aligned middle aligned scrolling segment">
   <h2 class="ui header">
-    {{singleBiome.title}}
+    {{title}}
   </h2>
   {{> listmobs}}
 </section>
+
+
+  <section class="ui center aligned middle aligned segment">
+
+    {{> addmob}}
+
+  </section>
+  
+{{/with}}
 
 <footer class="site-footer">
   <div class="ui container">

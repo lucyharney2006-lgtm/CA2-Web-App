@@ -18,5 +18,8 @@ router.get('/dashboard', dashboard.createView);//getting dashboard view
 router.get('/about', about.createView);//getting about view
 router.get('/biome/:id', biome.createView);
 
+router.post('/biome/:id/addmob', biome.addMob);
+
+
 
 export default router;

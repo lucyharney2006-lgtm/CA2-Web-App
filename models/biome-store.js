@@ -17,6 +17,10 @@ const biomeStore = {
     return this.store.findOneBy(this.collection, (biome => biome.id === id));
 },
 
+addMob(id, mob) {
+    this.store.addItem(this.collection, id, this.array, mob);
+},
+
 
 };
 

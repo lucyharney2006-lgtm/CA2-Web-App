@@ -1,0 +1,15 @@
+<form class="ui stacked segment form" action="/biome/{{id}}/addmob" method="POST">
+  <div class="two fields">
+    <div class="field">
+      <label>Title</label>
+      <input type="text" name="title" autofocus required title = "Please include a valid Title"
+	  placeholder="Title">
+    </div>
+    <div class="field">
+      <label>Type</label>
+      <input type="text" name="type" required title = "Please include a valid type (passive/aggressive)"
+	  placeholder="Type"  >
+    </div>
+  </div>
+  <button class="ui blue submit button">Add Mob</button>
+</form>

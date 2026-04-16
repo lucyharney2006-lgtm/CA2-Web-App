@@ -1,0 +1,38 @@
+{{#unless biomes}}
+  <h3 class="ui message">
+    Start adding your biomes!
+  </h3>
+{{/unless}}
+
+<div class="ui three large stackable cards">
+
+  {{#each biomes}}
+    <div class="card">
+
+      <div class="image">
+        <img src="{{image}}" alt="{{title}}">
+      </div>
+
+      <div class="content">
+        <div class="header">{{title}}</div>
+      </div>
+
+      <div class="extra content">
+
+        {{#if mobs.length}}
+          <p>Total mobs: {{mobs.length}}</p>
+        {{else}}
+          <p>Empty biome!</p>
+        {{/if}}
+
+        <a href="/biome/{{id}}">
+          <i class="hand right point outline icon"></i>
+          View Biome
+        </a>
+
+      </div>
+
+    </div>
+  {{/each}}
+
+</div>

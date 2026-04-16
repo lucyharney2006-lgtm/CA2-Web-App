@@ -1,84 +1,90 @@
 {
-    "biomeCollection" : [
+  "biomeCollection": [
+    {
+      "id": "01",
+      "title": "Overworld",
+      "image": "flowerforest.jpg",
+      "mobs": [
         {
-            "id" : "01", 
-            "title" : "Overworld",
-            "image" : "flowerforest.jpg",
-            "mobs" : [
-                {
-                "id" : "03",
-                "title" : "Axolotl",
-                "type" : "Passive"
-                },
-
-                {
-                "id" : "04",
-                "title" : "Ocelot",
-                "type" : "Passive"
-                },
-
-                  {
-                "id" : "05",
-                "title" : "Panda",
-                "type" : "Passive"
-                },
-
-                  {
-                "id" : "06",
-                "title" : "Allay",
-                "type" : "Passive"
-                }
-
-            ]
-        },
-
-        {
-            "id" : "02",
-            "title" : "Nether",
-            "image" : "nether.jpg",
-            "mobs" : [
-                {
-                    "id" : "07",
-                    "title" : "Ghast",
-                    "type" : "Aggressive"
-                },
-
-                    {
-                    "id" : "08",
-                    "title" : "Wither Skeleton",
-                    "type" : "Aggressive"
-                },
-
-                     {
-                    "id" : "09",
-                    "title" : "Strider",
-                    "type" : "Passive"
-                }
-            ]
+          "id": "03",
+          "title": "Axolotl",
+          "type": "Passive"
         },
         {
-            "id" : "03",
-            "title" : "The End",
-            "image" : "theend.jpg",
-            "mobs" : [
-                       {
-                    "id" : "10",
-                    "title" : "Ender Dragon",
-                    "type" : "Aggressive"
-                },
-
-                         {
-                    "id" : "11",
-                    "title" : "Enderman",
-                    "type" : "Aggressive"
-                },
-
-                           {
-                    "id" : "12",
-                    "title" : "Shulker",
-                    "type" : "Aggressive"
-                }
-            ]
+          "id": "04",
+          "title": "Ocelot",
+          "type": "Passive"
+        },
+        {
+          "id": "05",
+          "title": "Panda",
+          "type": "Passive"
+        },
+        {
+          "id": "06",
+          "title": "Allay",
+          "type": "Passive"
+        },
+        {
+          "id": "bcbb9203-4fb1-4c18-a646-a19b10c016d9",
+          "title": "Wolf",
+          "artist": "Passive"
+        },
+        {
+          "id": "e3b72084-98aa-4681-ae1e-2f2654ece924",
+          "title": "Happy Ghast",
+          "type": "Passive"
         }
-    ]
+      ]
+    },
+    {
+      "id": "02",
+      "title": "Nether",
+      "image": "nether.jpg",
+      "mobs": [
+        {
+          "id": "07",
+          "title": "Ghast",
+          "type": "Aggressive"
+        },
+        {
+          "id": "08",
+          "title": "Wither Skeleton",
+          "type": "Aggressive"
+        },
+        {
+          "id": "09",
+          "title": "Strider",
+          "type": "Passive"
+        },
+        {
+          "id": "a731bfaf-8542-4674-b062-7d2b0d264cd2",
+          "title": "Magma Cube",
+          "artist": "Aggressive"
+        }
+      ]
+    },
+    {
+      "id": "03",
+      "title": "The End",
+      "image": "theend.jpg",
+      "mobs": [
+        {
+          "id": "10",
+          "title": "Ender Dragon",
+          "type": "Aggressive"
+        },
+        {
+          "id": "11",
+          "title": "Enderman",
+          "type": "Aggressive"
+        },
+        {
+          "id": "12",
+          "title": "Shulker",
+          "type": "Aggressive"
+        }
+      ]
+    }
+  ]
 }
