@@ -2,6 +2,9 @@
 
 import appStore from "../models/app-store.js";
 import accounts from './accounts.js';
+import logger from '../utils/logger.js';
+import userStore from '../models/user-store.js';
+
 
 
 const about = {
@@ -13,7 +16,7 @@ createView(request, response) {
       const viewData = {
         title: 'About the Minecraft App',
         fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
-        employees: empStore.getEmployees(),
+        users: userStore.getAllUsers(),
       };
       response.render('about', viewData);
     }

@@ -90,17 +90,36 @@
       ]
     },
     {
-      "userid": "b8a0d426-8eaf-41c7-9d72-8f7dbf68f1a3",
-      "id": "28646b30-2211-42c3-a358-0d7bf3576f1e",
-      "title": "Desert",
+      "userid": "2b6f0989-7b7f-4a38-ad26-aa06b922d751",
+      "id": "04e45bdf-e844-4921-9a40-bbd14439fd8b",
+      "title": "cherry",
       "rating": null,
-      "mobs": [
-        {
-          "id": "6d1d3d74-0790-438f-9c7d-75c6b52ddab0",
-          "title": "Camel",
-          "type": "Passive"
-        }
-      ]
+      "image": "/biomeDefault.webp",
+      "mobs": []
+    },
+    {
+      "userid": "2b6f0989-7b7f-4a38-ad26-aa06b922d751",
+      "id": "1d31582a-7895-45ff-925d-bf467f4778b2",
+      "title": "Nether",
+      "rating": 1,
+      "image": "/biomeDefault.webp",
+      "mobs": []
+    },
+    {
+      "userid": "2b6f0989-7b7f-4a38-ad26-aa06b922d751",
+      "id": "d495d95d-a537-4356-ac00-bf71a358ebd6",
+      "title": "Taiga",
+      "rating": 4,
+      "image": "/biomeDefault.webp",
+      "mobs": []
+    },
+    {
+      "userid": "b8a0d426-8eaf-41c7-9d72-8f7dbf68f1a3",
+      "id": "2ba5dd98-03ea-44c2-a566-617020f8c37c",
+      "title": "End",
+      "rating": 2,
+      "image": "/biomeDefault.webp",
+      "mobs": []
     }
   ]
 }

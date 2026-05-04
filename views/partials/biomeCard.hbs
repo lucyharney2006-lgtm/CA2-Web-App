@@ -1,0 +1,43 @@
+<div class="card">
+
+  <div class="image">
+    <img src="{{picture.url}}" alt="{{title}}">
+  </div>
+
+  <div class="content">
+    <div class="header">{{title}}</div>
+  </div>
+
+  <div class="extra content">
+
+    {{#if mobs.length}}
+      <p>Total mobs: {{mobs.length}}</p>
+    {{else}}
+      <p>Empty biome!</p>
+    {{/if}}
+
+    <p>
+      <span 
+        class="ui red disabled rating" 
+        data-icon="circle" 
+        data-rating="{{rating}}" 
+        data-max-rating="5">
+      </span>
+
+      <span style="color: grey; font-size: 90%; font-style: italic">
+        {{rating}}
+      </span>
+    </p>
+
+    <a href="/biome/{{id}}">
+      <i class="hand right point outline icon"></i>
+      View Biome
+    </a>
+
+    <a href="/dashboard/deletebiome/{{id}}">
+      <i class="ui trash pink icon"></i>
+    </a>
+
+  </div>
+
+</div>

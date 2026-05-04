@@ -18,7 +18,7 @@ createView(request, response) {
       fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
     };
 
-    response.render('playlist', viewData);
+    response.render('biome', viewData);
 },
 
 

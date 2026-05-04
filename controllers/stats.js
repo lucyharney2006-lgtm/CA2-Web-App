@@ -24,8 +24,8 @@ const stats = {
 
       let avgRating = numBiomes > 0 ? totalRating / numBiomes : 0;
 
-      let maxRating = Biomes.length > 0 ? Math.max(...Biomes.map(biome => biome.rating)) : 0;
-      let maxRated = Biomes.filter(biome => biome.rating === maxRating);
+      let maxRating = biomes.length > 0 ? Math.max(...biomes.map(biome => biome.rating)) : 0;
+      let maxRated = biomes.filter(biome => biome.rating === maxRating);
       let favTitles = maxRated.map(item => item.title);
 
 

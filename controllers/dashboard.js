@@ -66,21 +66,24 @@ const dashboard = {
       userid: loggedInUser.id,
       id: uuidv4(),
       title: request.body.title,
-      rating: parseInt(request.body.rating),
+      rating: Number(request.body.rating) || 1,
       mobs: [],
     };
 
-    biomeStore.addBiome(newBiome);
-    response.redirect('/dashboard');
+  biomeStore.addBiome(newBiome, request.files.picture, function() {
+    response.redirect("/dashboard");
+});
+
   },
 
-
-deleteBiome(request, response) {
+  deleteBiome(request, response) {
     const biomeId = request.params.id;
     logger.debug(`Deleting Biome ${biomeId}`);
-    biomeStore.removeBiome(biomeId);
-    response.redirect("/dashboard");
-},
+    biomeStore.removeBiome(biomeId, function() {
+      response.redirect("/dashboard");
+    });
+  },
+
 
 
   

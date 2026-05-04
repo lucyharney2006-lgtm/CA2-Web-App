@@ -1,60 +1,21 @@
-{{#unless biomes}}
-  <h3 class="ui message">
-    Start adding your biomes!
-  </h3>
-{{/unless}}
+<section class="ui left aligned middle aligned segment">
 
-<div class="ui three large stackable cards">
+  {{> dashboardHeader }}
 
-  {{#each biomes}}
-    <div class="card">
+  {{#unless search}}
+    {{#unless biomes}}
+    <h3 class="ui message">
+      Start adding your biomes!
+    </h3>
+    {{/unless}}
+  {{/unless}}
 
-      <div class="image">
-        <img src="{{image}}" alt="{{title}}">
-      </div>
+  <div class="ui centered cards">
+    
+    {{#each biomes}}
+      {{> biomeCard}}
+    {{/each}}
+    
+  </div>
 
-      <div class="content">
-        <div class="header">{{title}}</div>
-      </div>
-
-      <div class="extra content">
-
-        {{#if mobs.length}}
-          <p>Total mobs: {{mobs.length}}</p>
-        {{else}}
-          <p>Empty biome!</p>
-        {{/if}}
-
-        {{#if rating}}
-    <p>
-        <span 
-            class="ui red disabled rating" 
-            data-icon="circle" 
-            data-rating="{{rating}}" 
-            data-max-rating="5">
-        </span>
-
-        <span style="color: grey; font-size: 90%; font-style: italic">
-  {{highlightDifficulty rating}}
-</span>
-
-    </p>
-{{/if}}
-
-
-        <a href="/biome/{{id}}">
-          <i class="hand right point outline icon"></i>
-          View Biome
-        </a>
-
-        <a href="/dashboard/deletebiome/{{id}}">
-   <i class="ui trash pink icon"></i>
-</a>
-
-
-      </div>
-
-    </div>
-  {{/each}}
-
-</div>
+</section>

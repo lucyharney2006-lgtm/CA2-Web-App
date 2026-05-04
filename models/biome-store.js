@@ -21,13 +21,34 @@ addMob(id, mob) {
     this.store.addItem(this.collection, id, this.array, mob);
 },
 
-addBiome(biome) {
-    this.store.addCollection(this.collection, biome);
-},
+  async addBiome(biome, file, response) {
+    try {
+      biome.picture = await this.store.addToCloudinary(file);
+      this.store.addCollection(this.collection, biome);
+      response();
+    } catch (error) {
+      logger.error("Error processing biome:", error);
+      response(error);
+    }
+  },
 
-removeMob(id, mobId) {
-    this.store.removeItem(this.collection, id, this.array, mobId);
-},
+
+  async removeBiome(id, response) {
+    const biome = this.getBiome(id);
+
+    if (biome.picture && biome.picture.public_id) {
+      try {
+        await this.store.deleteFromCloudinary(biome.picture.public_id);
+        logger.info("Cloudinary image deleted");
+      } catch (err) {
+        logger.error("Failed to delete Cloudinary image:", err);
+      }
+    }
+
+    this.store.removeCollection(this.collection, biome);
+    response();
+  },
+
 
 removeBiome(id) {
     const biome = this.getBiome(id);
